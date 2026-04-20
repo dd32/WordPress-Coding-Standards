@@ -4,7 +4,6 @@
 ============================================================================================
 Please read the CONTRIBUTING guide before submitting your pull request.
 
-- Warning: AI-generated PRs are NOT welcome and may result in a ban from this repository.
 - Small PRs using atomic, descriptive commits are hugely appreciated, as it will make
   reviewing your changes easier for the maintainers.
 - Ensure that the code you are submitting meets copyright and licensing requirements to be included in this codebase.
