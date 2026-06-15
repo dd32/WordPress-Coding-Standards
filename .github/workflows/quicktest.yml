@@ -35,7 +35,7 @@ jobs:
           persist-credentials: false
 
       - name: Set up PHP
-        uses: shivammathur/setup-php@7c071dfe9dc99bdf297fa79cb49ea005b9fcadbc # 2.37.1
+        uses: shivammathur/setup-php@f3e473d116dcccaddc5834248c87452386958240 # 2.37.2
         with:
           php-version: ${{ matrix.php }}
           # With stable PHPCS dependencies, allow for PHP deprecation notices.
@@ -75,7 +75,7 @@ jobs:
 
       - name: Send coverage report to Codecov
         if: ${{ success() && github.event.repository.fork == false && github.ref_name == 'develop' }}
-        uses: codecov/codecov-action@e79a6962e0d4c0c17b229090214935d2e33f8354 # v6.0.1
+        uses: codecov/codecov-action@fb8b3582c8e4def4969c97caa2f19720cb33a72f # v7.0.0
         with:
           files: ./build/logs/clover.xml
           fail_ci_if_error: true
